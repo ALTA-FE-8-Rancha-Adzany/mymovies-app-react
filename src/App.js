@@ -44,9 +44,11 @@ export default class App extends Component {
       <div>
         <Navbar />
         <div className="App-header">
-          {listNews.map((item) => {
-            return <Card src={item.image} title={item.title} summary={item.summary} />;
-          })}
+          <div className="container d-flex flex-wrap justify-content-evenly align-content-between">
+            {listNews.map((item) => {
+              return <Card src={item.image} title={item.title} summary={item.summary} />;
+            })}
+          </div>
         </div>
       </div>
     );
