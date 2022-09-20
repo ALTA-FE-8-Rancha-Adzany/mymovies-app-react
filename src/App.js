@@ -27,8 +27,8 @@ export default class App extends Component {
         <Navbar />
         <div className="App-header">
           <div className="container d-flex flex-wrap justify-content-evenly align-content-between">
-            {this.state.film.map((film, index) => {
-              return <Card data={film} key={index} />;
+            {this.state.film.map((film) => {
+              return <Card data={film} key={film.id} />;
             })}
           </div>
         </div>
